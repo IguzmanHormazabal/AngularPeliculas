@@ -1,0 +1,60 @@
+<app-mostrar-errores [errores]="errores"></app-mostrar-errores>
+<form (submit)="guardarCambios()" [formGroup]="form" >
+
+    <mat-form-field appearance="outline">
+        <mat-label>Titulo*</mat-label>
+        <input formControlName="titulo" matInput>
+        <mat-error>El campo es requerido</mat-error>
+    </mat-form-field>
+    <div class="contenedor-checkbox">
+    <mat-checkbox formControlName="enCines">En cines</mat-checkbox>
+    </div>
+    <mat-form-field appearance="outline">
+        <mat-label>Trailer</mat-label>
+        <input formControlName="trailer" matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Fecha de Lanzamiento</mat-label>
+        <input formControlName="fechaLanzamiento" matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <h4>Seleccionar Poster</h4>
+
+    <app-input-img
+    [urlImagenActual]="modelo?.poster"
+    (archivoSeleccionado)="archivoSeleccionado($event)"></app-input-img>
+
+    <h4>Resumen de la pelicula</h4>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Resumen</mat-label>
+        <input formControlName="resumen" matInput>
+    </mat-form-field>
+
+    <h4>Seleccione los generos.</h4>
+    <app-selector-multiple 
+    [Seleccionados]="generosSeleccionados"
+    [NoSeleccionados]="generosNoSeleccionados"></app-selector-multiple>
+
+    <h4>Seleccione los Cines asociados</h4>
+    
+    <app-selector-multiple 
+    [Seleccionados]="cineSeleccionados"
+    [NoSeleccionados]="cinesNoSeleccionados"></app-selector-multiple>
+
+    <h4>Seleccione los actores</h4>
+
+    <app-autocomplete-actores
+    [actoresSeleccionados]="actoresSeleccionados">
+    </app-autocomplete-actores>
+
+    <div>
+        <button mat-flat-button color="primary" [disabled]="form.invalid">
+            Guardar Cambios
+        </button>
+        <a mat-stroked-button routerLink="/">Cancelar</a>
+    </div>
+</form>

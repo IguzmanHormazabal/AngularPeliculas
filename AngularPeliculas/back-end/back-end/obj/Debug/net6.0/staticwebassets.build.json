@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "r/NMOY2tUvFoZLGhIiqmqYd3+/W/qIEp6qegE68xJ/I=",
+  "Source": "back-end",
+  "BasePath": "_content/back-end",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "back-end\\wwwroot",
+      "Source": "back-end",
+      "ContentRoot": "C:\\Users\\Ignacio\\OneDrive\\Escritorio\\CURSOS UDEMY\\Angular 12 y .NET CORE 6\\AngularPeliculas\\back-end\\back-end\\wwwroot\\",
+      "BasePath": "_content/back-end",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Ignacio\\OneDrive\\Escritorio\\CURSOS UDEMY\\Angular 12 y .NET CORE 6\\AngularPeliculas\\back-end\\back-end\\wwwroot\\actores\\4dc6a559-e0f2-46b8-9f01-464d24649fec.jpg",
+      "SourceId": "back-end",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ignacio\\OneDrive\\Escritorio\\CURSOS UDEMY\\Angular 12 y .NET CORE 6\\AngularPeliculas\\back-end\\back-end\\wwwroot\\",
+      "BasePath": "_content/back-end",
+      "RelativePath": "actores/4dc6a559-e0f2-46b8-9f01-464d24649fec.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\actores\\4dc6a559-e0f2-46b8-9f01-464d24649fec.jpg"
+    }
+  ]
+}
